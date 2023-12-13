@@ -1,0 +1,101 @@
+
+*, *::before, *::afer {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #1e1e1e;
+    background-image: url(/giuseppe/bar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+    
+}
+
+.container {
+
+    width: 40%;
+    background-color: #1e1e1e;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: rgb(255, 183, 123) 0 0 50px 2px;
+  
+
+}
+
+
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.btn {
+    background-color: #df7e42;
+    border: 1px solid #ea9763;
+    border-radius: 5px;
+    padding: 20px 10px;
+    color: white;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+.btn:hover {
+    background-color: #ea9763;
+} 
+
+#text {
+    font-size: 1.5rem;
+    text-align: center;
+    color: whitesmoke;
+
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 80%;
+        margin: 50px;
+    }
+
+
+
+}
+
+
+
+@media screen and (min-width: 600px) {
+    .container {
+        box-shadow: rgb(255, 183, 123) 0 0 700px 100px;
+    
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .container {
+        box-shadow: rgb(255, 183, 123) 0 0 700px 150px;
+    
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .btn-grid {
+        display: grid;
+        grid-template-columns: repeat(1, auto)
+ 
+     }
+}
+
+
+
+

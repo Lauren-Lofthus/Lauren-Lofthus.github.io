@@ -1,0 +1,655 @@
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Neonderthaw', cursive;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+   background-color: #0e0e16;
+}
+
+a {
+   text-decoration: none;
+}
+
+.navbar {
+   background-color: black;
+   width: 100%;
+   height: 80px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.2rem;
+   position: sticky;
+   top: 0;
+   z-index: 999;
+   
+}
+
+.navbar_container {
+display: flex;
+justify-content: space-between;
+height: 80px;
+z-index: 1;
+width: 100%;
+max-width: 1300px;
+margin: 0 auto;
+padding: 0 50px;
+
+}
+
+#navbar_logo {
+   width: 30%;
+   padding-left: 5%;
+   font-size: 3rem;
+   text-decoration: none;
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+   color: white;
+   cursor: pointer;
+
+}
+
+#navbar_logo:hover {
+   color: orange;
+   transition: all 0.3s ease;
+}
+
+.navbar_menu {
+   display: flex;
+   align-items: center;
+   list-style: none;
+
+}
+
+.navbar_item {
+   height: 80px;
+}
+
+.navbar_links {
+   text-decoration: none;
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 125px;
+   height: 100%;
+   transition: all 0.3s ease;
+}
+
+.navbar_links:hover {
+   color: orange;
+   transition: all 0.3s ease;
+}
+/*
+.welcome_Button{
+   text-align: center;
+   padding: 20px 40px;
+   border-radius: 5px;
+   font-size: 2rem;
+   background-color: black;
+   color: white;
+} */
+
+
+
+#project_Container {
+
+   padding: 100px 0px;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: whitesmoke;
+   font-size: 2rem;
+   text-align: center;
+}
+
+
+
+.project {
+
+   width: 70%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+
+   
+}
+
+.project_Card {
+
+   border-radius: 50px;
+   background-color: orange;
+
+}
+
+
+#brr_Card {
+
+   background-image: url(brr.jpg);
+   background-size: cover;
+   background-position: center;
+   width: 800px;
+   height: 650px;
+   box-shadow: black 0 0 50px 2px;
+}
+#snake_Card {
+   background-image: url(sbtPic.jpg);
+   background-size: cover;
+   background-position: center;
+   width: 800px;
+   height: 650px;
+   box-shadow: black 0 0 50px 2px;
+}
+#gp_Card {
+   background-image: url(gp_Pic.jpg);
+   background-size: cover;
+   background-position: center;
+   width: 800px;
+   height: 650px;
+   box-shadow: black 0 0 50px 2px;
+}
+
+
+
+.project_Card {
+
+   background-color: orange;
+   margin: 15% 0 10% 0;
+}   
+
+
+
+
+.project_Text {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 70%;
+}
+
+.project_TextP {
+   font-size: 2rem;
+   padding: 0 0 3rem 0;
+   text-align: center;
+   color: whitesmoke;
+}
+
+.project_Button {
+   background-color: #945002;
+   color: white;
+   border-radius: 10px;
+   font-size: 1.7rem;
+   padding: 20px 40px;
+   text-align: center;
+   box-shadow: #190d00 0 0 10px 2px;
+
+}
+
+.project_Button:hover {
+   background-color: orange;
+   cursor: pointer;
+}
+
+
+@media screen and (max-width: 960px) {
+   .navbar {
+      width: 100%;
+   }
+
+   .navbar_container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      height: 80px;
+      z-index: 1;
+      max-width: 1300px;
+      padding: 0;
+   }
+
+   .navbar_menu {
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto;
+      margin: 0;
+      position: absolute;
+      top: -1000px;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: -1;
+      background-color: #242539;
+      padding: 80px 0;
+   }
+
+   .navbar_menu.active {
+      background-color: #242539;
+      box-shadow: black 0 0 50px 2px;
+      top: 100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 99;
+      height: 60vh;
+      font-size: 1.6rem;
+   }
+
+   #navbar_logo {
+      padding-left: 25px;
+   }
+
+   .navbar_toggle .bar {
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      transition:all 0.3s ease-in-out;
+      background-color: white;
+   }
+
+   .navbar_item {
+      width: 100%;
+   }
+
+   .navbar_links {
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      display: table;
+   }
+
+   #mobile-menu {
+      position: absolute;
+      top: 20%;
+      right: 5%;
+      transform: translate(5%, 20%);
+   }
+
+   .navbar_toggle .bar {
+      display: block;
+      cursor: pointer;
+   }
+
+   #mobile-menu.is-active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    #mobile-menu.is-active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+  
+    #mobile-menu.is-active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+
+   
+
+
+#brr_Card {
+
+   background-image: url(brr.jpg);
+   background-size: cover;
+   background-position: center;
+   width: 400px;
+   height: 300px;
+   box-shadow: black 0 0 50px 2px;
+}
+#snake_Card {
+   background-image: url(sbtPic.jpg);
+   background-size: cover;
+   background-position: center;
+   width: 400px;
+   height: 300px;
+   box-shadow: black 0 0 50px 2px;
+}
+#gp_Card {
+   background-image: url(gp_Pic.jpg);
+   background-size: cover;
+   background-position: center;
+   width: 400px;
+   height: 300px;
+   box-shadow: black 0 0 50px 2px;
+}
+
+.project_Card {
+
+   background-color: orange;
+   margin: 30% 0 30% 0;
+} 
+#main_H1 {
+   padding-top: 200px;
+}
+
+}
+
+
+
+body {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+.flex_Div {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+
+}
+
+#main_Pic {
+   width: 100%;
+}
+
+#main_TitleDiv {
+   display: flex;
+
+   flex-direction: column;
+
+}
+
+#main_H1 {
+   text-align: center;
+   font-size: 3rem;
+   margin-top: -200px;
+   color: orange;
+   position: absolute;
+   text-shadow: black 1px 0 10px;
+}
+
+#main_TitleDiv p {
+   text-align: center;
+   color: orange;
+   font-size: 1.5rem;
+
+}
+
+
+
+
+
+#big_Art {
+   margin-top: 100px;
+   padding: 100px 0px 150px 0px;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+   background-color: whitesmoke;
+  
+   margin-bottom: 5rem;
+   font-size: 2rem;
+
+}
+
+#art_Container {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   width: 80%;
+
+
+
+}
+
+.art_Piece {
+   margin-top: 75px;
+   height: 500px;
+   width: 312px;
+   border-radius: 50px;
+
+}
+
+@media screen and (max-width: 1300px) {
+   #art_Container {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .art_Piece {
+      height: 800px;
+      width: 500px;
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .art_Piece {
+      height: 640px;
+      width: 400px;
+      
+   }
+}
+
+
+#art_1 {
+   background-image: url(GP_Ext_Pic.jpg);
+   background-size: cover;
+
+}
+
+#art_2 {
+   background-image: url(oldfashioned.png);
+   background-size: cover;
+}
+
+#art_3 {
+   background-image: url(GP-bar-wide.jpg);
+   background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+#about_MeDiv {
+   background-color: #5e607c;
+
+   width: 100%;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+
+}
+
+#about_MeText {
+   width: 70%;
+   max-width: 600px;
+   height: 50%;
+   color: white;
+   text-align: center;
+   padding: 100px 0;
+
+
+}
+
+#about_MeText h2 {
+   font-size: 2rem;
+}
+
+#about_MeText p {
+   font-size: 1.5rem;
+}
+
+/*MY SKILLS*/
+
+
+
+.services {
+   margin-top: 50px;
+   padding-bottom: 50px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+
+   font-size: 2rem;
+   text-align: center;
+}
+
+.services h1 {
+   color: whitesmoke;
+   margin-bottom: 5rem;
+
+}
+
+.services_wrapper {
+   display: flex;
+   justify-content: center;
+
+}
+
+#resume_Pic {
+   width: 80%;
+   border-radius: 50px;
+}
+/*
+.services_card {
+   margin: 10px;
+   height: 600px;
+   width: 400px;
+   border-radius: 50px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   background: orange;
+   background: -webkit-linear-gradient(to right, #cececc, #242539);
+   background: linear-gradient(to right, #cececc, #242539);
+   transition: 0.3s ease-in;
+}
+
+.services_card h2 {
+   text-align: center;
+   width: 80%;
+}
+
+.services_card p {
+   text-align: center;
+   margin-top: 24px;
+   font-size: 20px;
+   width: 80%;
+}
+
+
+
+.services_card:hover {
+   transform: scale(1.055);
+   transition: 0.3s ease-in;
+   cursor: pointer;
+}
+*/
+
+/*
+@media screen and (max-width:1300px) {
+   .services_wrapper {
+       grid-template-columns: 1fr;
+      
+   }
+
+}
+
+
+@media screen and (max-width: 600px) {
+   .services_card {
+      width: 400px;
+   }
+}
+*/
+
+
+
+
+
+
+
+
+
+.project h1 {
+
+   color: orange;
+   margin-bottom: 5rem;
+   font-size: 2.5rem;
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 600px) {
+   
+}
+
+@media screen and (min-width:1300px) {
+
+
+
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+
+   .project_Text {
+      width: 80%;
+   }
+}
+
+
+#footer_Container {
+   margin-top: 20%;
+   width: 100%;
+   height: 400px;
+   background-color: #5283ff;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   font-size: 1.5rem;
+   background-image: linear-gradient(to top, #5e607c, #242539);
+}
+
+#social_Container {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   padding: 25px;
+   font-size: 1.5rem;
+   color: orange;
+}
+
+#social_Container img {
+   height: 30px;
+   width: 30px;
+   margin: 30px;
+
+}
+
