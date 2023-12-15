@@ -311,18 +311,13 @@ body {
     
 }
 
-@media screen and (max-width: 450px) {
-    #main_Text {
-        font-size: 20px;
-    }
-}
 
 @media screen and (max-width: 960px)    {
         
     #main_Text {
         position: absolute;
         color: black;
-        font-size: 3rem;
+        font-size: 2rem;
         text-align: center;
         padding: 0 4%;
         text-shadow: white 1px 0 10px;
