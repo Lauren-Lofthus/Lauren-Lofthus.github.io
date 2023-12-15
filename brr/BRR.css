@@ -977,7 +977,9 @@ body {
 }
 
 @media screen and (min-width: 500px) {
-    
+    #red_Circle {
+        padding-top: 25px;
+    }
 }
 
 @media screen and (max-width: 1300px) {
