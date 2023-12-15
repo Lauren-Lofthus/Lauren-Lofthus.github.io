@@ -69,6 +69,16 @@ body {
     #text {
         font-size: 1rem;
     }
+    .btn {
+    background-color: #df7e42;
+    border: 1px solid #ea9763;
+    border-radius: 5px;
+    padding: 10px 5px;
+    color: white;
+    outline: none;
+    font-size: 1rem;
+}
+
 
 
 
