@@ -313,7 +313,7 @@ body {
 
 @media screen and (max-width: 450px) {
     #main_Text {
-        font-size: 2rem;
+        font-size: 20px;
     }
 }
 
