@@ -1,5 +1,5 @@
 
-*, *::before, *::afer {
+*, *::before, *::after {
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
@@ -15,7 +15,7 @@ body {
     background-color: #1e1e1e;
     background-image: url(/giuseppe/bar.jpg);
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: 100vh;
 
     
 }
