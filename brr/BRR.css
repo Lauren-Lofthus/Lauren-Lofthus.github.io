@@ -197,6 +197,7 @@ body {
     .navbar_Menu.active {
         display: flex;
         flex-direction: column;
+        justify-content: space-evenly;
         background: #131313;
         top: 100%;
         opacity: 1;
@@ -975,6 +976,9 @@ body {
     
 }
 
+@media screen and (min-width: 500px) {
+    
+}
 
 @media screen and (max-width: 1300px) {
 
