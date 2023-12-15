@@ -976,14 +976,7 @@ body {
     
 }
 
-@media screen and (min-width: 500px) {
-    #listen_Header {
-        margin-bottom: 30px;
-    }
 
-    #red_Circle {
-        width: 80%;
-}
 
 @media screen and (max-width: 1300px) {
 
