@@ -427,7 +427,7 @@ body {
 
 @media screen and (max-width: 600px) {
    .art_Piece {
-      height: 490px;
+      height: 450px;
       width: 285px;
       
    }
@@ -521,7 +521,7 @@ body {
 
 #resume_Pic {
    width: 80%;
-   border-radius: 50px;
+
 }
 /*
 .services_card {
