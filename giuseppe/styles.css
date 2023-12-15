@@ -21,7 +21,7 @@ body {
 }
 
 .container {
-
+    display: flex;
     width: 40%;
     background-color: #1e1e1e;
     padding: 50px;
