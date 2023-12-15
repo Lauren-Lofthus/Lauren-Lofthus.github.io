@@ -221,12 +221,12 @@ body {
 
     .navbar_Item {
         width: 100%;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
     }
 
     .navbar_Links {
         text-align: center;
-        padding: 2rem;
+        padding: 1rem;
         width: 100%;
         display: table;
 
