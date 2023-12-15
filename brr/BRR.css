@@ -240,7 +240,7 @@ body {
         align-items: center;
         width: 60%;
         height: 100px;
-        margin: 0;
+        margin-bottom: 20px;
     }
 
     #mobile_Menu {
