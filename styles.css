@@ -300,24 +300,24 @@ padding: 0 50px;
    background-image: url(brr.jpg);
    background-size: cover;
    background-position: center;
-   width: 400px;
-   height: 300px;
+   width: 350px;
+   height: 275px;
    box-shadow: black 0 0 50px 2px;
 }
 #snake_Card {
    background-image: url(sbtPic.jpg);
    background-size: cover;
    background-position: center;
-   width: 400px;
-   height: 300px;
+   width: 350px;
+   height: 275px;
    box-shadow: black 0 0 50px 2px;
 }
 #gp_Card {
    background-image: url(gp_Pic.jpg);
    background-size: cover;
    background-position: center;
-   width: 400px;
-   height: 300px;
+   width: 350px;
+   height: 275px;
    box-shadow: black 0 0 50px 2px;
 }
 
