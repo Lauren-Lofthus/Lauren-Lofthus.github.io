@@ -1057,6 +1057,9 @@ footer {
 }
 @media screen and (max-width: 960px) {
 
+    #holder_Div {
+        height: 30px;
+    }
     #footer_Info {
         display: flex;
         flex-direction: column;
