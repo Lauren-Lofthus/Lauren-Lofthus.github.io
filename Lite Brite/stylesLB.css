@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+
+} 
+
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to top, white, purple);
+}
+
+h1 {
+    margin-top: 3vh;
+    font-size: 7rem;
+    color: white;
+    width: 50%;
+    line-height: 100px;
+
+}
+
+h2 {
+    margin-top: 10vh;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#welcomeTo {
+    font-size: 2rem;
+}
+
+#options {
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#options a{
+    font-size: 1.5rem;
+    background-color: white;
+    border-radius: 10px;
+    border: solid 2px purple;
+    box-shadow: 2px 2px 4px;
+    margin: 20px;
+    padding: 30px 20px;
+    color: black;
+    text-decoration: none;
+}
+
+
+
+.background{
+    background-color: #000000;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pattern {
+    background-color: #121212;
+    width: 97vw;
+    height: 98vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.square {
+    color: #a5a5a5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colorButton {
+    all: unset;
+    padding: 1px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    /*background-color: transparent;*/
+    position: absolute;
+    font-family:'Courier New', Courier, monospace;
+
+}
+
+.homeButton {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.homeButton img {
+    height: 40px;
+    width: 40px;
+}
+
+
+
+.doto {
+  font-family: "Doto", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings:
+    "ROND" 0;
+}
